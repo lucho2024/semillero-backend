@@ -2,7 +2,8 @@
 DECLARE @myTableVariable TABLE (nombre varchar(400), descripcion varchar(100), ruta varchar(100))
 
 insert into @myTableVariable values
-('MNU_JCAM_FORM_EST', 'Formulario_Estudiante_JCAM', 'views/PRYCT/PRYCT/T_PRYCTYDNQOYSI_867/1.0.0/VC_ESTUDIANJT_299867_TASK.html'),
+('MNU_JCAM_FORM_EST', 	'Formulario_Estudiante_JCAM', 	'views/PRYCT/PRYCT/T_PRYCTYDNQOYSI_867/1.0.0/VC_ESTUDIANJT_299867_TASK.html'),
+('MNU_CSSS_GIT', 		'FormularioEstudianteCSSS', 	'views/PRYCT/PRYCT/T_PRYCTOFDGOIJL_246/1.0.0/VC_ESTUDIANSE_830246_TASK.html'),
 ('nombre', 'descripcion', 'ruta')
 
 DECLARE @Nombre AS nvarchar(400)
