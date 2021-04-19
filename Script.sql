@@ -67,7 +67,7 @@ OPEN ProdInfo
 			me_url, 				me_order, 			me_id_cobis_product, 		me_option, 
 			me_description, 		me_version, 		me_container)
 		values (
-			@w_id_menu, 			6909, 				@w_nombre, 					1, 
+			@w_id_menu, 			7293, 				@w_nombre, 					1, 
 			@w_ruta, 				1, 					@w_id_producto, 			0, 
 			@w_description, 		NULL, 				'CWC')
 	
