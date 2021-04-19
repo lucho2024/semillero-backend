@@ -1,5 +1,5 @@
 
-DECLARE @myTableVariable TABLE (nombre varchar(400), descripcion varchar(100), ruta varchar(100))
+DECLARE @myTableVariable TABLE (nombre varchar(400), description varchar(100), ruta varchar(100))
 
 insert into @myTableVariable values
 ('MNU_JCAM_FORM_EST', 	'Formulario_Estudiante_JCAM', 	'views/PRYCT/PRYCT/T_PRYCTYDNQOYSI_867/1.0.0/VC_ESTUDIANJT_299867_TASK.html'),
@@ -7,9 +7,11 @@ insert into @myTableVariable values
 ('MNU_LHMM_GIT',		'FormularioEstudianteLHMM',		'views/PRYCT/PRYCT/T_PRYCTARZNMLLP_381/1.0.0/VC_ESTUDIANTM_573381_TASK.html'),
 ('nombre', 'descripcion', 'ruta')
 
-DECLARE @Nombre AS nvarchar(400)
-DECLARE @Description AS nvarchar(100)
-DECLARE ProdInfo CURSOR FOR SELECT nombre, descripcion, ruta FROM @myTableVariable
+DECLARE @w_nombre AS nvarchar(400)
+DECLARE @w_description AS nvarchar(100)
+DECLARE @w_ruta AS nvarchar(400)
+
+DECLARE ProdInfo CURSOR FOR SELECT nombre, description, ruta FROM @myTableVariable
 
 OPEN ProdInfo
 
@@ -69,6 +71,7 @@ BEGIN
 
 	select * from cew_menu where me_name = @w_nombre
 
+	    
 	    FETCH NEXT FROM ProdInfo INTO @w_nombre, @w_description, @w_ruta
 
 END
